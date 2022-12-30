@@ -12,7 +12,7 @@ struct ContentView: View {
         TabView{
             CardView()
                 .tabItem {
-                    Label("Home", systemImage: "person")
+                    Label("Home", systemImage: "folder.fill.badge.person.crop")
                 }
         }
     }

@@ -1,5 +1,5 @@
 //
-//  WebViewI.swift
+//  WebViewT.swift
 //  BusinessCard
 //
 //  Created by Tony Stark on 2022/12/31.
@@ -8,8 +8,8 @@
 import SwiftUI
 import WebKit
 
-struct WebViewI: UIViewRepresentable {
-    var url: String = "https://www.instagram.com/akashirinta/"
+struct WebViewT: UIViewRepresentable {
+    var url: String = "https://twitter.com/tHS7ccbSVY6iHHH"
     func makeUIView(context: Context) -> WKWebView {
         return WKWebView()
     }
@@ -18,8 +18,8 @@ struct WebViewI: UIViewRepresentable {
     }
 }
 
-struct WebViewI_Previews: PreviewProvider {
+struct WebViewT_Previews: PreviewProvider {
     static var previews: some View {
-        WebViewI()
+        WebViewT()
     }
 }
