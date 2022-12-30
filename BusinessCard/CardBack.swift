@@ -8,12 +8,44 @@
 import SwiftUI
 
 struct CardBack: View {
+    @State private var isWebViewI: Bool = false
+    @State private var isWebViewT: Bool = false
     var body: some View {
-        Text("Back")
-            .frame(width: 300, height: 200)
-            .background(Color.green)
+        ZStack{
+            Rectangle()
+                .frame(width: 300, height: 200)
+                .foregroundColor(.blue)
+            VStack{
+                Text("Address")
+                    .font(.title2)
+                HStack{
+                    Button(action: {
+                        isWebViewI = true
+                    }) {
+                        Image("i")
+                            .resizable()
+                        .frame(width: 50, height: 50)                    }.sheet(isPresented: $isWebViewI){
+                            WebViewI()
+                        }
+                    Button(action: {
+                        isWebViewT = true
+                    }) {
+                        Image("t")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                    }.sheet(isPresented: $isWebViewT){
+                        WebViewT()
+                    }
+                  
+                }
+            }
             .rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))
-            .scaleEffect(x: 1, y: -1, anchor: .center)    }
+            .scaleEffect(x: 1, y: -1, anchor: .center)
+            .frame(width: 300, height: 200)
+            
+        }
+        
+    }
 }
 
 struct CardBack_Previews: PreviewProvider {

@@ -20,8 +20,8 @@ struct CardFront: View {
                         .font(.title3)
                         .padding(.leading)
                     Spacer()
-                    Circle()
-                        .frame(width: 50)
+                   IconView()
+                                          
                         .padding([.top, .trailing])
                 }
                 Spacer()
