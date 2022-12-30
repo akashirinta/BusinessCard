@@ -11,6 +11,10 @@
 		2E01F15F295D731A00D57070 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F15E295D731A00D57070 /* ContentView.swift */; };
 		2E01F161295D731B00D57070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E01F160295D731B00D57070 /* Assets.xcassets */; };
 		2E01F164295D731B00D57070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E01F163295D731B00D57070 /* Preview Assets.xcassets */; };
+		2E01F16B295D78AF00D57070 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16A295D78AF00D57070 /* CardView.swift */; };
+		2E01F16D295D7ADF00D57070 /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16C295D7ADF00D57070 /* CardFront.swift */; };
+		2E01F16F295D7B0100D57070 /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16E295D7B0100D57070 /* CardBack.swift */; };
+		2E779B8C295F723500110D64 /* WebViewI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8B295F723500110D64 /* WebViewI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		2E01F15E295D731A00D57070 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E01F160295D731B00D57070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E01F163295D731B00D57070 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E01F16A295D78AF00D57070 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2E01F16C295D7ADF00D57070 /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
+		2E01F16E295D7B0100D57070 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
+		2E779B8B295F723500110D64 /* WebViewI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				2E01F15C295D731A00D57070 /* BusinessCardApp.swift */,
 				2E01F15E295D731A00D57070 /* ContentView.swift */,
+				2E01F16A295D78AF00D57070 /* CardView.swift */,
+				2E01F16C295D7ADF00D57070 /* CardFront.swift */,
+				2E01F16E295D7B0100D57070 /* CardBack.swift */,
+				2E779B8B295F723500110D64 /* WebViewI.swift */,
 				2E01F160295D731B00D57070 /* Assets.xcassets */,
 				2E01F162295D731B00D57070 /* Preview Content */,
 			);
@@ -138,6 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E01F15F295D731A00D57070 /* ContentView.swift in Sources */,
+				2E01F16D295D7ADF00D57070 /* CardFront.swift in Sources */,
+				2E01F16B295D78AF00D57070 /* CardView.swift in Sources */,
+				2E779B8C295F723500110D64 /* WebViewI.swift in Sources */,
+				2E01F16F295D7B0100D57070 /* CardBack.swift in Sources */,
 				2E01F15D295D731A00D57070 /* BusinessCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
