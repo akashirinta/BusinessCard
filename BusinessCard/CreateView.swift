@@ -9,22 +9,32 @@ import SwiftUI
 
 struct CreateView: View {
 
-    @State private var image: UIImage?
+    @ObservedObject private var viewModel = CreateViewModel()
     @State var showingImagePicker = false
-    @State var name: String = ""
-    @State var furigana: String = ""
-    @State var organizationName: String = ""
-    @State var mailaddress: String = ""
-    @State var phoneNumber: String = ""
-    @State var address: String = ""
-    @State var twitter: String = ""
-    @State var Instagram: String = ""
+    @State private var isChecked = false
+    @State private var showPreview = false
+    @Environment(\.dismiss) var dismiss
 
     var body: some View {
         ScrollView {
             VStack {
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        showPreview.toggle()
+                    }, label: {
+                        Image(systemName: "eye")
+                            .padding(.trailing, 30)
+                            .foregroundColor(.black)
+                    })
+                    .sheet(isPresented: $showPreview) {
+                        PreviewModal()
+                            .presentationDetents([.medium])
+                    }
+                }
+
                 VStack {
-                    if let uiImage = image {
+                    if let uiImage = viewModel.image {
                         Image(uiImage: uiImage)
                             .resizable()
                             .frame(width: 200, height: 200)
@@ -43,7 +53,7 @@ struct CreateView: View {
                     }
                 }
                 .sheet(isPresented: $showingImagePicker) {
-                    ImagePicker(sourceType: .photoLibrary, selectedImage: $image)
+                    ImagePicker(sourceType: .photoLibrary, selectedImage: $viewModel.image)
                 }
                 Spacer()
                     .frame(height: 75)
@@ -55,7 +65,7 @@ struct CreateView: View {
                         .frame(width: 327, alignment: .leading)
                         .padding(.horizontal, 32)
                     VStack {
-                        TextField("", text: $name)
+                        TextField("", text: $viewModel.name)
                             .frame(width: 327, alignment: .leading)
                             .padding(.top, 10)
                         Divider()
@@ -67,7 +77,7 @@ struct CreateView: View {
                         .frame(width: 327, alignment: .leading)
                         .padding(.horizontal, 32)
                     VStack {
-                        TextField("", text: $furigana)
+                        TextField("", text: $viewModel.furigana)
                             .frame(width: 327, alignment: .leading)
                             .padding(.top, 10)
                         Divider()
@@ -79,7 +89,7 @@ struct CreateView: View {
                         .frame(width: 327, alignment: .leading)
                         .padding(.horizontal, 32)
                     VStack {
-                        TextField("", text: $organizationName)
+                        TextField("", text: $viewModel.organizationName)
                             .frame(width: 327, alignment: .leading)
                             .padding(.top, 10)
                         Divider()
@@ -94,7 +104,7 @@ struct CreateView: View {
                         .frame(width: 327, alignment: .leading)
                         .padding(.horizontal, 32)
                     VStack {
-                        TextField("", text: $mailaddress)
+                        TextField("", text: $viewModel.mailaddress)
                             .frame(width: 327, alignment: .leading)
                             .padding(.top, 10)
                         Divider()
@@ -106,7 +116,7 @@ struct CreateView: View {
                         .frame(width: 327, alignment: .leading)
                         .padding(.horizontal, 32)
                     VStack {
-                        TextField("", text: $phoneNumber)
+                        TextField("", text: $viewModel.phoneNumber)
                             .frame(width: 327, alignment: .leading)
                             .padding(.top, 10)
                         Divider()
@@ -118,7 +128,7 @@ struct CreateView: View {
                         .frame(width: 327, alignment: .leading)
                         .padding(.horizontal, 32)
                     VStack {
-                        TextField("", text: $address)
+                        TextField("", text: $viewModel.address)
                             .frame(width: 327, alignment: .leading)
                             .padding(.top, 10)
                         Divider()
@@ -130,7 +140,7 @@ struct CreateView: View {
                         .frame(width: 327, alignment: .leading)
                         .padding(.horizontal, 32)
                     VStack {
-                        TextField("", text: $twitter)
+                        TextField("", text: $viewModel.twitter)
                             .frame(width: 327, alignment: .leading)
                             .padding(.top, 10)
                         Divider()
@@ -142,7 +152,7 @@ struct CreateView: View {
                         .frame(width: 327, alignment: .leading)
                         .padding(.horizontal, 32)
                     VStack {
-                        TextField("", text: $Instagram)
+                        TextField("", text: $viewModel.Instagram)
                             .frame(width: 327, alignment: .leading)
                             .padding(.top, 10)
                         Divider()
@@ -151,15 +161,22 @@ struct CreateView: View {
                     .padding(.bottom, 45)
                 }
 
-                Button(action: {}, label: {
+                Button(action: {
+                    if viewModel.isvalidatedButton() {
+                        dismiss()
+                    }
+
+                }, label: {
                     Text("確認")
                         .frame(width: 291, height: 46, alignment: .center)
-                        .background(Color(UIColor(red: 0.075, green: 0.775, blue: 0.996, alpha: 1).cgColor))
+                        .background(viewModel.isvalidatedButton()
+                                    ? Color(UIColor(red: 0.075, green: 0.775, blue: 0.996, alpha: 1).cgColor)
+                                    : Color(UIColor(red: 0.075, green: 0.775, blue: 0.996, alpha: 0.5).cgColor)
+                                    )
                         .foregroundColor(.white)
                         .cornerRadius(50.0)
 
                 })
-
 
             }
         }
