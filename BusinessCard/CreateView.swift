@@ -18,21 +18,6 @@ struct CreateView: View {
     var body: some View {
         ScrollView {
             VStack {
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        showPreview.toggle()
-                    }, label: {
-                        Image(systemName: "eye")
-                            .padding(.trailing, 30)
-                            .foregroundColor(.black)
-                    })
-                    .sheet(isPresented: $showPreview) {
-                        PreviewModal()
-                            .presentationDetents([.medium])
-                    }
-                }
-
                 VStack {
                     if let uiImage = viewModel.image {
                         Image(uiImage: uiImage)
@@ -41,7 +26,7 @@ struct CreateView: View {
                             .clipShape(Circle())
                     } else {
                         Circle()
-                            .foregroundColor(.gray)
+                            .foregroundColor(Color(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1).cgColor))
                             .frame(width: 200, height: 200)
                             .clipShape(Circle())
                     }
@@ -190,6 +175,27 @@ struct CreateView: View {
 
                 })
 
+            }
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: {
+                    dismiss()
+                }) {
+                    Text("< 戻る")
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    showPreview.toggle()
+                }) {
+                    Image(systemName: "eye")
+                }
+                .sheet(isPresented: $showPreview) {
+                    PreviewModal()
+                        .presentationDetents([.medium])
+                }
             }
         }
 
