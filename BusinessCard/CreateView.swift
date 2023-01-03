@@ -61,9 +61,13 @@ struct CreateView: View {
 
                 Group {
                     // 必須項目
-                    Text("名前")
-                        .frame(width: 327, alignment: .leading)
-                        .padding(.horizontal, 32)
+                    HStack(spacing: 10) {
+                        Text("名前")
+                        Text("※")
+                            .foregroundColor(.red)
+                    }
+                    .frame(width: 327, alignment: .leading)
+
                     VStack {
                         TextField("", text: $viewModel.name)
                             .frame(width: 327, alignment: .leading)
@@ -73,9 +77,13 @@ struct CreateView: View {
                     }
                     .padding(.bottom, 45)
 
-                    Text("ふりがな")
-                        .frame(width: 327, alignment: .leading)
-                        .padding(.horizontal, 32)
+                    HStack(spacing: 10) {
+                        Text("ふりがな")
+                        Text("※")
+                            .foregroundColor(.red)
+                    }
+                    .frame(width: 327, alignment: .leading)
+
                     VStack {
                         TextField("", text: $viewModel.furigana)
                             .frame(width: 327, alignment: .leading)
@@ -85,9 +93,13 @@ struct CreateView: View {
                     }
                     .padding(.bottom, 45)
 
-                    Text("学校/会社名")
-                        .frame(width: 327, alignment: .leading)
-                        .padding(.horizontal, 32)
+                    HStack(spacing: 10) {
+                        Text("学校/会社名")
+                        Text("※")
+                            .foregroundColor(.red)
+                    }
+                    .frame(width: 327, alignment: .leading)
+
                     VStack {
                         TextField("", text: $viewModel.organizationName)
                             .frame(width: 327, alignment: .leading)

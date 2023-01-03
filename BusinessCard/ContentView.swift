@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showCreate: Bool = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello")
+        NavigationView {
+            NavigationLink(destination: CreateView()) {
+                Text("作成")
+            }
+
+
         }
-        .padding()
+
+
     }
 }
 
