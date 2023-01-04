@@ -13,9 +13,19 @@ struct CardView: View {
         ZStack {
             if isFlipped {
                 CardBack()
+                    .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.black, lineWidth: 2)
+                    )
                     .rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))
             } else {
                 CardFront()
+                    .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.black, lineWidth: 2)
+                    )
+                    
+                
                 .rotation3DEffect(.degrees(isFlipped ? 180 : 0),axis: (x: 0, y: 1, z: 0))    }
             }
         
@@ -34,5 +44,6 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView()
+        
     }
 }
