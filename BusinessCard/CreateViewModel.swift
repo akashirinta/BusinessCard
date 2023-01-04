@@ -19,15 +19,11 @@ class CreateViewModel: ObservableObject {
     @Published var phoneNumber: String = ""
     @Published var address: String = ""
     @Published var twitter: String = ""
-    @Published var Instagram: String = ""
+    @Published var instagram: String = ""
     private var model = CreateModel()
 
     func isvalidatedButton() -> Bool {
         model.isValidated(name: name, furigana: furigana, organizationName: organizationName)
     }
-
-
-
-
 
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CreateView: View {
 
-    @ObservedObject private var viewModel = CreateViewModel()
+    @StateObject private var viewModel = CreateViewModel()
     @State var showingImagePicker = false
     @State private var isChecked = false
     @State private var showPreview = false
@@ -55,8 +55,7 @@ struct CreateView: View {
 
                     VStack {
                         TextField("", text: $viewModel.name)
-                            .frame(width: 327, alignment: .leading)
-                            .padding(.top, 10)
+                            .textField()
                         Divider()
                             .frame(width: 327)
                     }
@@ -71,8 +70,7 @@ struct CreateView: View {
 
                     VStack {
                         TextField("", text: $viewModel.furigana)
-                            .frame(width: 327, alignment: .leading)
-                            .padding(.top, 10)
+                            .textField()
                         Divider()
                             .frame(width: 327)
                     }
@@ -87,8 +85,7 @@ struct CreateView: View {
 
                     VStack {
                         TextField("", text: $viewModel.organizationName)
-                            .frame(width: 327, alignment: .leading)
-                            .padding(.top, 10)
+                            .textField()
                         Divider()
                             .frame(width: 327)
                     }
@@ -102,8 +99,7 @@ struct CreateView: View {
                         .padding(.horizontal, 32)
                     VStack {
                         TextField("", text: $viewModel.mailaddress)
-                            .frame(width: 327, alignment: .leading)
-                            .padding(.top, 10)
+                            .textField()
                         Divider()
                             .frame(width: 327)
                     }
@@ -114,8 +110,7 @@ struct CreateView: View {
                         .padding(.horizontal, 32)
                     VStack {
                         TextField("", text: $viewModel.phoneNumber)
-                            .frame(width: 327, alignment: .leading)
-                            .padding(.top, 10)
+                            .textField()
                         Divider()
                             .frame(width: 327)
                     }
@@ -126,8 +121,7 @@ struct CreateView: View {
                         .padding(.horizontal, 32)
                     VStack {
                         TextField("", text: $viewModel.address)
-                            .frame(width: 327, alignment: .leading)
-                            .padding(.top, 10)
+                            .textField()
                         Divider()
                             .frame(width: 327)
                     }
@@ -138,8 +132,7 @@ struct CreateView: View {
                         .padding(.horizontal, 32)
                     VStack {
                         TextField("", text: $viewModel.twitter)
-                            .frame(width: 327, alignment: .leading)
-                            .padding(.top, 10)
+                            .textField()
                         Divider()
                             .frame(width: 327)
                     }
@@ -149,9 +142,8 @@ struct CreateView: View {
                         .frame(width: 327, alignment: .leading)
                         .padding(.horizontal, 32)
                     VStack {
-                        TextField("", text: $viewModel.Instagram)
-                            .frame(width: 327, alignment: .leading)
-                            .padding(.top, 10)
+                        TextField("", text: $viewModel.instagram)
+                            .textField()
                         Divider()
                             .frame(width: 327)
                     }
@@ -160,10 +152,11 @@ struct CreateView: View {
 
                 Button(action: {
                     if viewModel.isvalidatedButton() {
+                        viewModel.saveCard()
                         dismiss()
                     }
 
-                }, label: {
+                }) {
                     Text("確認")
                         .frame(width: 291, height: 46, alignment: .center)
                         .background(viewModel.isvalidatedButton()
@@ -172,9 +165,7 @@ struct CreateView: View {
                                     )
                         .foregroundColor(.white)
                         .cornerRadius(50.0)
-
-                })
-
+                }
             }
         }
         .navigationBarBackButtonHidden(true)
