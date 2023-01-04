@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E01F15D295D731A00D57070 /* BusinessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F15C295D731A00D57070 /* BusinessCardApp.swift */; };
 		2E01F15F295D731A00D57070 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F15E295D731A00D57070 /* ContentView.swift */; };
 		2E01F161295D731B00D57070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E01F160295D731B00D57070 /* Assets.xcassets */; };
 		2E01F164295D731B00D57070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E01F163295D731B00D57070 /* Preview Assets.xcassets */; };
@@ -20,12 +19,11 @@
 		F5FAEDD829649B4300E64997 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDD729649B4300E64997 /* TextField+Extension.swift */; };
 		F5FAEDDB2965BE8F00E64997 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDDA2965BE8F00E64997 /* Card.swift */; };
 		F5FAEDDF2965D51100E64997 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5FAEDDE2965D51100E64997 /* GoogleService-Info.plist */; };
-		F5FAEDE32965D73500E64997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDE22965D73500E64997 /* AppDelegate.swift */; };
+		F5FAEDE72965DB9E00E64997 /* BusinessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDE62965DB9E00E64997 /* BusinessCardApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E01F159295D731A00D57070 /* BusinessCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E01F15C295D731A00D57070 /* BusinessCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardApp.swift; sourceTree = "<group>"; };
 		2E01F15E295D731A00D57070 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E01F160295D731B00D57070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E01F163295D731B00D57070 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -39,7 +37,7 @@
 		F5FAEDD729649B4300E64997 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
 		F5FAEDDA2965BE8F00E64997 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F5FAEDDE2965D51100E64997 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F5FAEDE22965D73500E64997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5FAEDE62965DB9E00E64997 /* BusinessCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BusinessCardApp.swift; path = BusinessCard/BusinessCardApp.swift; sourceTree = SOURCE_ROOT; };
 		FA7810769F457839051F0E70 /* Pods-BusinessCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCard.release.xcconfig"; path = "Target Support Files/Pods-BusinessCard/Pods-BusinessCard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +59,6 @@
 				78B920588F6C5530747712F7 /* Pods-BusinessCard.debug.xcconfig */,
 				FA7810769F457839051F0E70 /* Pods-BusinessCard.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,8 +142,7 @@
 		F5FAEDE12965D71C00E64997 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				2E01F15C295D731A00D57070 /* BusinessCardApp.swift */,
-				F5FAEDE22965D73500E64997 /* AppDelegate.swift */,
+				F5FAEDE62965DB9E00E64997 /* BusinessCardApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -271,10 +267,9 @@
 				F5FAEDD129646EC600E64997 /* CreateViewModel.swift in Sources */,
 				F5FAEDCD295D9DB000E64997 /* ImagePicker.swift in Sources */,
 				F5FAEDD52964863000E64997 /* PreviewModal.swift in Sources */,
+				F5FAEDE72965DB9E00E64997 /* BusinessCardApp.swift in Sources */,
 				F5FAEDCB295D9A8700E64997 /* CreateView.swift in Sources */,
-				2E01F15D295D731A00D57070 /* BusinessCardApp.swift in Sources */,
 				F5FAEDD829649B4300E64997 /* TextField+Extension.swift in Sources */,
-				F5FAEDE32965D73500E64997 /* AppDelegate.swift in Sources */,
 				F5FAEDD329647E9A00E64997 /* CreateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
