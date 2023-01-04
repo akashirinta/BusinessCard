@@ -15,6 +15,7 @@ struct CardBack: View {
             Rectangle()
                 .frame(width: 300, height: 200)
                 .foregroundColor(.blue)
+                .cornerRadius(15)
             VStack{
                 Text("Address")
                     .font(.title2)
