@@ -9,12 +9,14 @@ import SwiftUI
 
 struct CreateView: View {
 
-    @StateObject private var viewModel = CreateViewModel()
+    @ObservedObject private var viewModel = CreateViewModel()
+    @Binding var tabSelection: Int
     @State var showingImagePicker = false
     @State private var isChecked = false
     @State private var showPreview = false
     @Environment(\.dismiss) var dismiss
 
+    // TODO: データ保存時・別タブに移動したときにデータの内容を初期化する
     var body: some View {
         ScrollView {
             VStack {
@@ -169,7 +171,7 @@ struct CreateView: View {
                 Button(action: {
                     if viewModel.isvalidatedButton() {
                         viewModel.createCard()
-                        dismiss()
+                        tabSelection = 1
                     }
 
                 }) {
@@ -188,7 +190,9 @@ struct CreateView: View {
 }
 
 struct CreateView_Previews: PreviewProvider {
+
+    @State static var selection: Int = 2
     static var previews: some View {
-        CreateView()
+        CreateView(tabSelection: $selection)
     }
 }
