@@ -162,7 +162,7 @@ struct CreateView: View {
                         .background(viewModel.isvalidatedButton()
                                     ? Color(UIColor(red: 0.075, green: 0.775, blue: 0.996, alpha: 1).cgColor)
                                     : Color(UIColor(red: 0.075, green: 0.775, blue: 0.996, alpha: 0.5).cgColor)
-                                    )
+                        )
                         .foregroundColor(.white)
                         .cornerRadius(50.0)
                 }
@@ -189,7 +189,6 @@ struct CreateView: View {
                 }
             }
         }
-
     }
 }
 
