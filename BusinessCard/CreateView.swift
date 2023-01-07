@@ -152,7 +152,7 @@ struct CreateView: View {
 
                 Button(action: {
                     if viewModel.isvalidatedButton() {
-                        viewModel.saveCard()
+                        viewModel.createCard()
                         dismiss()
                     }
 

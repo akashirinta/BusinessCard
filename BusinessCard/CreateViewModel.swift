@@ -26,4 +26,17 @@ class CreateViewModel: ObservableObject {
         model.isValidated(name: name, furigana: furigana, organizationName: organizationName)
     }
 
+    func createCard() {
+        model.saveData(card: Card(
+            name: name,
+            furigana: furigana,
+            organizationName: organizationName,
+            mailaddress: mailaddress,
+            phoneNumber: phoneNumber,
+            address: address,
+            twitter: twitter,
+            Instagram: instagram)
+        )
+    }
+
 }
