@@ -33,6 +33,10 @@ struct ContentView: View {
                 Label("Home", systemImage: "folder.fill.badge.person.crop")
             }
 
+            CreateView()
+                .tabItem {
+                    Label("Create", systemImage: "folder.fill.badge.plus")
+                }
 
             ScrollView{
                 VStack{

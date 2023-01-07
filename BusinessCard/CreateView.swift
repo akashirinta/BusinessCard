@@ -18,6 +18,22 @@ struct CreateView: View {
     var body: some View {
         ScrollView {
             VStack {
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        showPreview.toggle()
+                    }) {
+                        Image(systemName: "eye")
+                            .resizable()
+                            .frame(width: 40, height: 25)
+                    }
+                    .sheet(isPresented: $showPreview) {
+                        PreviewModal()
+                            .presentationDetents([.medium])
+                    }
+                    .padding(.trailing, 30)
+
+                }
                 VStack {
                     if let uiImage = viewModel.image {
                         Image(uiImage: uiImage)
@@ -165,27 +181,6 @@ struct CreateView: View {
                         )
                         .foregroundColor(.white)
                         .cornerRadius(50.0)
-                }
-            }
-        }
-        .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
-                    dismiss()
-                }) {
-                    Text("< 戻る")
-                }
-            }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    showPreview.toggle()
-                }) {
-                    Image(systemName: "eye")
-                }
-                .sheet(isPresented: $showPreview) {
-                    PreviewModal()
-                        .presentationDetents([.medium])
                 }
             }
         }
