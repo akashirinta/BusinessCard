@@ -7,24 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E01F15D295D731A00D57070 /* BusinessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F15C295D731A00D57070 /* BusinessCardApp.swift */; };
 		2E01F15F295D731A00D57070 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F15E295D731A00D57070 /* ContentView.swift */; };
 		2E01F161295D731B00D57070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E01F160295D731B00D57070 /* Assets.xcassets */; };
 		2E01F164295D731B00D57070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E01F163295D731B00D57070 /* Preview Assets.xcassets */; };
+		5A0FA979787999D9A038ACB9 /* Pods_BusinessCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9100242F616FF34B934A5 /* Pods_BusinessCard.framework */; };
+		F5FAEDCB295D9A8700E64997 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDCA295D9A8700E64997 /* CreateView.swift */; };
+		F5FAEDCD295D9DB000E64997 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */; };
+		F5FAEDD129646EC600E64997 /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDD029646EC600E64997 /* CreateViewModel.swift */; };
+		F5FAEDD329647E9A00E64997 /* CreateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDD229647E9A00E64997 /* CreateModel.swift */; };
+		F5FAEDD52964863000E64997 /* PreviewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDD42964863000E64997 /* PreviewModal.swift */; };
+		F5FAEDD829649B4300E64997 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDD729649B4300E64997 /* TextField+Extension.swift */; };
+		F5FAEDDB2965BE8F00E64997 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDDA2965BE8F00E64997 /* Card.swift */; };
+		F5FAEDDF2965D51100E64997 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5FAEDDE2965D51100E64997 /* GoogleService-Info.plist */; };
+		F5FAEDE72965DB9E00E64997 /* BusinessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDE62965DB9E00E64997 /* BusinessCardApp.swift */; };
+		F5FAEDEA2965DBF100E64997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDE92965DBF100E64997 /* AppDelegate.swift */; };
+		F5FAEE232969B95500E64997 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEE222969B95500E64997 /* User.swift */; };
 		2E01F16B295D78AF00D57070 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16A295D78AF00D57070 /* CardView.swift */; };
 		2E01F16D295D7ADF00D57070 /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16C295D7ADF00D57070 /* CardFront.swift */; };
 		2E01F16F295D7B0100D57070 /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16E295D7B0100D57070 /* CardBack.swift */; };
 		2E779B8C295F723500110D64 /* WebViewI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8B295F723500110D64 /* WebViewI.swift */; };
 		2E779B8E295F76D600110D64 /* WebViewT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8D295F76D600110D64 /* WebViewT.swift */; };
 		2E779B90295F7BC900110D64 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8F295F7BC900110D64 /* IconView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E01F159295D731A00D57070 /* BusinessCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E01F15C295D731A00D57070 /* BusinessCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardApp.swift; sourceTree = "<group>"; };
 		2E01F15E295D731A00D57070 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E01F160295D731B00D57070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E01F163295D731B00D57070 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DE9100242F616FF34B934A5 /* Pods_BusinessCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusinessCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B920588F6C5530747712F7 /* Pods-BusinessCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCard.debug.xcconfig"; path = "Target Support Files/Pods-BusinessCard/Pods-BusinessCard.debug.xcconfig"; sourceTree = "<group>"; };
+		F5FAEDCA295D9A8700E64997 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F5FAEDD029646EC600E64997 /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
+		F5FAEDD229647E9A00E64997 /* CreateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateModel.swift; sourceTree = "<group>"; };
+		F5FAEDD42964863000E64997 /* PreviewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModal.swift; sourceTree = "<group>"; };
+		F5FAEDD729649B4300E64997 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
+		F5FAEDDA2965BE8F00E64997 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F5FAEDDE2965D51100E64997 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5FAEDE62965DB9E00E64997 /* BusinessCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BusinessCardApp.swift; path = BusinessCard/App/BusinessCardApp.swift; sourceTree = SOURCE_ROOT; };
+		F5FAEDE92965DBF100E64997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5FAEE222969B95500E64997 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA7810769F457839051F0E70 /* Pods-BusinessCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCard.release.xcconfig"; path = "Target Support Files/Pods-BusinessCard/Pods-BusinessCard.release.xcconfig"; sourceTree = "<group>"; };
 		2E01F16A295D78AF00D57070 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		2E01F16C295D7ADF00D57070 /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
 		2E01F16E295D7B0100D57070 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
@@ -38,17 +63,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0FA979787999D9A038ACB9 /* Pods_BusinessCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B196637CC85DB89FC2E10A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78B920588F6C5530747712F7 /* Pods-BusinessCard.debug.xcconfig */,
+				FA7810769F457839051F0E70 /* Pods-BusinessCard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2E01F150295D731A00D57070 = {
 			isa = PBXGroup;
 			children = (
 				2E01F15B295D731A00D57070 /* BusinessCard */,
 				2E01F15A295D731A00D57070 /* Products */,
+				1B196637CC85DB89FC2E10A8 /* Pods */,
+				6CE18E20DB5AB417ADC74A83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +100,16 @@
 		2E01F15B295D731A00D57070 /* BusinessCard */ = {
 			isa = PBXGroup;
 			children = (
-				2E01F15C295D731A00D57070 /* BusinessCardApp.swift */,
+				F5FAEDE82965DBDF00E64997 /* App */,
+				F5FAEDE02965D65C00E64997 /* Resouce */,
+				F5FAEDD92965BE8400E64997 /* Model */,
+				F5FAEDD629649B2E00E64997 /* Utility */,
 				2E01F15E295D731A00D57070 /* ContentView.swift */,
+				F5FAEDCA295D9A8700E64997 /* CreateView.swift */,
+				F5FAEDD42964863000E64997 /* PreviewModal.swift */,
+				F5FAEDD029646EC600E64997 /* CreateViewModel.swift */,
+				F5FAEDD229647E9A00E64997 /* CreateModel.swift */,
+				F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */,
 				2E01F16A295D78AF00D57070 /* CardView.swift */,
 				2E01F16C295D7ADF00D57070 /* CardFront.swift */,
 				2E01F16E295D7B0100D57070 /* CardBack.swift */,
@@ -85,6 +130,48 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6CE18E20DB5AB417ADC74A83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DE9100242F616FF34B934A5 /* Pods_BusinessCard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5FAEDD629649B2E00E64997 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAEDD729649B4300E64997 /* TextField+Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F5FAEDD92965BE8400E64997 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAEDDA2965BE8F00E64997 /* Card.swift */,
+				F5FAEE222969B95500E64997 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5FAEDE02965D65C00E64997 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAEDDE2965D51100E64997 /* GoogleService-Info.plist */,
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		F5FAEDE82965DBDF00E64997 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAEDE62965DB9E00E64997 /* BusinessCardApp.swift */,
+				F5FAEDE92965DBF100E64997 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E01F167295D731B00D57070 /* Build configuration list for PBXNativeTarget "BusinessCard" */;
 			buildPhases = (
+				9A9FAFDD341196F73633E750 /* [CP] Check Pods Manifest.lock */,
 				2E01F155295D731A00D57070 /* Sources */,
 				2E01F156295D731A00D57070 /* Frameworks */,
 				2E01F157295D731A00D57070 /* Resources */,
+				8CEBF1BEB8EE193AF3367D67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,10 +234,53 @@
 			files = (
 				2E01F164295D731B00D57070 /* Preview Assets.xcassets in Resources */,
 				2E01F161295D731B00D57070 /* Assets.xcassets in Resources */,
+				F5FAEDDF2965D51100E64997 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CEBF1BEB8EE193AF3367D67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BusinessCard/Pods-BusinessCard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BusinessCard/Pods-BusinessCard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BusinessCard/Pods-BusinessCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A9FAFDD341196F73633E750 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BusinessCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E01F155295D731A00D57070 /* Sources */ = {
@@ -156,6 +288,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E01F15F295D731A00D57070 /* ContentView.swift in Sources */,
+				F5FAEDDB2965BE8F00E64997 /* Card.swift in Sources */,
+				F5FAEDD129646EC600E64997 /* CreateViewModel.swift in Sources */,
+				F5FAEDCD295D9DB000E64997 /* ImagePicker.swift in Sources */,
+				F5FAEDD52964863000E64997 /* PreviewModal.swift in Sources */,
+				F5FAEDE72965DB9E00E64997 /* BusinessCardApp.swift in Sources */,
+				F5FAEDCB295D9A8700E64997 /* CreateView.swift in Sources */,
+				F5FAEDD829649B4300E64997 /* TextField+Extension.swift in Sources */,
+				F5FAEDEA2965DBF100E64997 /* AppDelegate.swift in Sources */,
+				F5FAEDD329647E9A00E64997 /* CreateModel.swift in Sources */,
+				F5FAEE232969B95500E64997 /* User.swift in Sources */,
 				2E779B8E295F76D600110D64 /* WebViewT.swift in Sources */,
 				2E01F16D295D7ADF00D57070 /* CardFront.swift in Sources */,
 				2E01F16B295D78AF00D57070 /* CardView.swift in Sources */,
@@ -285,13 +427,14 @@
 		};
 		2E01F168295D731B00D57070 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B920588F6C5530747712F7 /* Pods-BusinessCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BusinessCard/Preview Content\"";
-				DEVELOPMENT_TEAM = 8KAL996FG8;
+				DEVELOPMENT_TEAM = 94M9FJ82WR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -299,6 +442,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,13 +458,14 @@
 		};
 		2E01F169295D731B00D57070 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7810769F457839051F0E70 /* Pods-BusinessCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BusinessCard/Preview Content\"";
-				DEVELOPMENT_TEAM = 8KAL996FG8;
+				DEVELOPMENT_TEAM = 94M9FJ82WR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -328,6 +473,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

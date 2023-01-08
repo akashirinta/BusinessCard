@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct CardView: View {
+
     @State private var isFlipped = false
+    var card: Card
+
     var body: some View {
         ZStack {
             if isFlipped {
-                CardBack()
+                CardBack(card: card)
                     .overlay(
                     RoundedRectangle(cornerRadius: 16)
                         .stroke(Color.black, lineWidth: 2)
                     )
                     .rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))
             } else {
-                CardFront()
+
+                CardFront(card: card)
+
                     .overlay(
                     RoundedRectangle(cornerRadius: 16)
                         .stroke(Color.black, lineWidth: 2)
@@ -43,7 +48,9 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+
+        CardView(card: Card(name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
+
         
     }
 }

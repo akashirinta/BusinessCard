@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct CardFront: View {
+
     @State private var paddingValue: CGFloat = 0
     @State private var bool = false
+    var card: Card
+    
     var body: some View {
         ZStack{
             Rectangle()
@@ -19,7 +22,9 @@ struct CardFront: View {
                 .padding(.bottom, paddingValue)
             VStack{
                 HStack{
-                    Text("School name")
+
+                    Text("\(card.organizationName)")
+
                         .font(.title3)
                         .padding(.leading)
                     Spacer()
@@ -29,9 +34,11 @@ struct CardFront: View {
                 }
                 Spacer()
                 VStack(spacing: -10){
-                    Text("Furigana")
+                
+                    Text("\(card.furigana)")
                         .font(.subheadline)
-                    Text("name")
+                    Text("\(card.name)")
+
                         .font(.largeTitle)
                 }
                 Spacer()
@@ -43,8 +50,15 @@ struct CardFront: View {
                         
                         Spacer()
                         VStack{
-                            Text("TEL")
-                            Text("Mail")
+
+                            if let phoneNumber = card.phoneNumber {
+                                Text("\(phoneNumber)")
+                            }
+
+                            if let mailaddress = card.mailaddress {
+                                Text("\(mailaddress)")
+                            }
+
                         }
                         .padding([.bottom,.trailing])
                     }
@@ -68,6 +82,8 @@ struct CardFront: View {
 
 struct CardFront_Previews: PreviewProvider {
     static var previews: some View {
-        CardFront()
+
+        CardFront(card: Card(name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
+
     }
 }

@@ -8,45 +8,61 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var tabSelection: Int = 1
+    var card: Card = Card(name: "name", furigana: "furigana", organizationName: "schoolname", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: "")
+
     init() {
         UITabBar.appearance().backgroundColor = .white
     }
+    
     var body: some View {
-        TabView{
+
+        TabView(selection: $tabSelection) {
+
             ScrollView{
                 VStack{
-                    
-                        CardFront()
+
+                    CardView(card: card)
                             .overlay {
                                 ForEach(0..<10){ i in
-                                CardFront()
+                                    CardView(card: card)
                                         .padding(.top, CGFloat(i + 1) * 150)
                                 }
-                                    
+
                             }
-                    
                 }
             }
             .tabItem {
                 Label("Home", systemImage: "folder.fill.badge.person.crop")
             }
+            .tag(1)
+
+            CreateView(tabSelection: $tabSelection)
+                .tabItem {
+                    Label("Create", systemImage: "folder.fill.badge.plus")
+                }
+                .tag(2)
+
             ScrollView{
                 VStack{
-                    CardView()
+                    CardView(card: card)
                         .overlay {
                             ForEach(0..<10){ i in
-                            CardView()
+                                CardView(card: card)
                                     .padding(.top, CGFloat(i + 1) * 150)
                             }
-                                
+
                         }
                 }
             }
             .tabItem {
                 Label("Home", systemImage: "folder.badge.minus")
             }
+            .tag(3)
+
         }
-       
+
     }
 }
 
