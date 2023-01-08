@@ -46,8 +46,13 @@ struct CardFront: View {
                         
                         Spacer()
                         VStack{
-                            Text("TEL")
-                            Text("Mail")
+                            if let phoneNumber = card.phoneNumber {
+                                Text("\(phoneNumber)")
+                            }
+
+                            if let mailaddress = card.mailaddress {
+                                Text("\(mailaddress)")
+                            }
                         }
                         .padding([.bottom,.trailing])
                     }
