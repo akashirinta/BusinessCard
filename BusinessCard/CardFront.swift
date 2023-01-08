@@ -22,7 +22,9 @@ struct CardFront: View {
                 .padding(.bottom, paddingValue)
             VStack{
                 HStack{
+
                     Text("\(card.organizationName)")
+
                         .font(.title3)
                         .padding(.leading)
                     Spacer()
@@ -32,9 +34,11 @@ struct CardFront: View {
                 }
                 Spacer()
                 VStack(spacing: -10){
+                
                     Text("\(card.furigana)")
                         .font(.subheadline)
                     Text("\(card.name)")
+
                         .font(.largeTitle)
                 }
                 Spacer()
@@ -46,6 +50,7 @@ struct CardFront: View {
                         
                         Spacer()
                         VStack{
+
                             if let phoneNumber = card.phoneNumber {
                                 Text("\(phoneNumber)")
                             }
@@ -53,6 +58,7 @@ struct CardFront: View {
                             if let mailaddress = card.mailaddress {
                                 Text("\(mailaddress)")
                             }
+
                         }
                         .padding([.bottom,.trailing])
                     }
@@ -76,6 +82,8 @@ struct CardFront: View {
 
 struct CardFront_Previews: PreviewProvider {
     static var previews: some View {
+
         CardFront(card: Card(name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
+
     }
 }

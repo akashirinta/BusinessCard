@@ -31,7 +31,6 @@ struct ContentView: View {
                                 }
 
                             }
-
                 }
             }
             .tabItem {
@@ -63,6 +62,7 @@ struct ContentView: View {
             .tag(3)
 
         }
+
     }
 }
 

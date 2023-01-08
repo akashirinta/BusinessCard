@@ -22,6 +22,13 @@
 		F5FAEDE72965DB9E00E64997 /* BusinessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDE62965DB9E00E64997 /* BusinessCardApp.swift */; };
 		F5FAEDEA2965DBF100E64997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDE92965DBF100E64997 /* AppDelegate.swift */; };
 		F5FAEE232969B95500E64997 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEE222969B95500E64997 /* User.swift */; };
+		2E01F16B295D78AF00D57070 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16A295D78AF00D57070 /* CardView.swift */; };
+		2E01F16D295D7ADF00D57070 /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16C295D7ADF00D57070 /* CardFront.swift */; };
+		2E01F16F295D7B0100D57070 /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16E295D7B0100D57070 /* CardBack.swift */; };
+		2E779B8C295F723500110D64 /* WebViewI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8B295F723500110D64 /* WebViewI.swift */; };
+		2E779B8E295F76D600110D64 /* WebViewT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8D295F76D600110D64 /* WebViewT.swift */; };
+		2E779B90295F7BC900110D64 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8F295F7BC900110D64 /* IconView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +50,12 @@
 		F5FAEDE92965DBF100E64997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FAEE222969B95500E64997 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA7810769F457839051F0E70 /* Pods-BusinessCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCard.release.xcconfig"; path = "Target Support Files/Pods-BusinessCard/Pods-BusinessCard.release.xcconfig"; sourceTree = "<group>"; };
+		2E01F16A295D78AF00D57070 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2E01F16C295D7ADF00D57070 /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
+		2E01F16E295D7B0100D57070 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
+		2E779B8B295F723500110D64 /* WebViewI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewI.swift; sourceTree = "<group>"; };
+		2E779B8D295F76D600110D64 /* WebViewT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewT.swift; sourceTree = "<group>"; };
+		2E779B8F295F7BC900110D64 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +110,12 @@
 				F5FAEDD029646EC600E64997 /* CreateViewModel.swift */,
 				F5FAEDD229647E9A00E64997 /* CreateModel.swift */,
 				F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */,
+				2E01F16A295D78AF00D57070 /* CardView.swift */,
+				2E01F16C295D7ADF00D57070 /* CardFront.swift */,
+				2E01F16E295D7B0100D57070 /* CardBack.swift */,
+				2E779B8F295F7BC900110D64 /* IconView.swift */,
+				2E779B8D295F76D600110D64 /* WebViewT.swift */,
+				2E779B8B295F723500110D64 /* WebViewI.swift */,
 				2E01F160295D731B00D57070 /* Assets.xcassets */,
 				2E01F162295D731B00D57070 /* Preview Content */,
 			);
@@ -279,6 +298,13 @@
 				F5FAEDEA2965DBF100E64997 /* AppDelegate.swift in Sources */,
 				F5FAEDD329647E9A00E64997 /* CreateModel.swift in Sources */,
 				F5FAEE232969B95500E64997 /* User.swift in Sources */,
+				2E779B8E295F76D600110D64 /* WebViewT.swift in Sources */,
+				2E01F16D295D7ADF00D57070 /* CardFront.swift in Sources */,
+				2E01F16B295D78AF00D57070 /* CardView.swift in Sources */,
+				2E779B8C295F723500110D64 /* WebViewI.swift in Sources */,
+				2E779B90295F7BC900110D64 /* IconView.swift in Sources */,
+				2E01F16F295D7B0100D57070 /* CardBack.swift in Sources */,
+				2E01F15D295D731A00D57070 /* BusinessCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,9 @@ struct CardView: View {
                     )
                     .rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))
             } else {
+
                 CardFront(card: card)
+
                     .overlay(
                     RoundedRectangle(cornerRadius: 16)
                         .stroke(Color.black, lineWidth: 2)
@@ -46,7 +48,9 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
+
         CardView(card: Card(name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
+
         
     }
 }
