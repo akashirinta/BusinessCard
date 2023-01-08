@@ -30,7 +30,7 @@ struct CreateView: View {
                             .frame(width: 40, height: 25)
                     }
                     .sheet(isPresented: $showPreview) {
-                        PreviewModal()
+                        PreviewModal(cardInfo: viewModel.createdCardInfo())
                             .presentationDetents([.medium])
                     }
                     .padding(.trailing, 30)

@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct PreviewModal: View {
+
+    var cardInfo: Card
+    
     var body: some View {
-        Text("プレビュー画面")
+        CardView(card: cardInfo)
     }
 }
 
 struct PreviewModal_Previews: PreviewProvider {
     static var previews: some View {
-        PreviewModal()
+        PreviewModal(cardInfo: Card(name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
     }
 }

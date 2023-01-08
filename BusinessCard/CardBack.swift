@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct CardBack: View {
+    
     @State private var isWebViewI: Bool = false
     @State private var isWebViewT: Bool = false
+    var card: Card
+
     var body: some View {
         ZStack{
             Rectangle()
@@ -51,6 +54,6 @@ struct CardBack: View {
 
 struct CardBack_Previews: PreviewProvider {
     static var previews: some View {
-        CardBack()
+        CardBack(card: Card(name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
     }
 }
