@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import SwiftUI
+import FirebaseStorage
 
 // コピペ
 // URL: https://www.yururiwork.net/archives/1404
@@ -48,6 +49,17 @@ struct ImagePicker: UIViewControllerRepresentable {
 
             if let image = info[.originalImage] as? UIImage {
                 parent.selectedImage = image
+            }
+
+            let storageRef = Storage.storage().reference().child("images/myimage.jpg")
+            if let data = parent.selectedImage?.jpegData(compressionQuality: 0.5) {
+                storageRef.putData(data, metadata: nil) { (metadata, error) in
+                    if error != nil {
+                        print(error!)
+                        return
+                    }
+                    print("Upload Successful!")
+                }
             }
 
             parent.presentationMode.wrappedValue.dismiss()

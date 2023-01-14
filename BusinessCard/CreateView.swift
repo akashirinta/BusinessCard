@@ -11,6 +11,7 @@ struct CreateView: View {
 
     @ObservedObject private var viewModel = CreateViewModel()
     @Binding var tabSelection: Int
+
     @State var showingImagePicker = false
     @State private var isChecked = false
     @State private var showPreview = false
