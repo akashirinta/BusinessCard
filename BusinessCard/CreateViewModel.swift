@@ -20,14 +20,22 @@ class CreateViewModel: ObservableObject {
     @Published var address: String = ""
     @Published var twitter: String = ""
     @Published var instagram: String = ""
+    var imageUrl: String = ""
     private var model = CreateModel()
 
     func isvalidatedButton() -> Bool {
         model.isValidated(name: name, furigana: furigana, organizationName: organizationName)
     }
 
+    // TODO: 何度も呼ばれるのを解消したい
     func createdCardInfo() -> Card {
-        Card(
+        model.getImageURL() { [self] (url) in
+            if let url = url {
+                imageUrl = url
+            }
+        }
+
+        return Card(
             name: name,
             furigana: furigana,
             organizationName: organizationName,

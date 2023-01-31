@@ -7,6 +7,7 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseStorage
 
 struct CreateModel {
 
@@ -28,6 +29,20 @@ struct CreateModel {
             }
 
         }
+    }
+
+    func getImageURL(completion: @escaping (String?) -> ()) {
+
+        let storageRef = Storage.storage().reference().child("images/myimage.jpg")
+        storageRef.downloadURL { (url, error) in
+            if let error = error {
+                print(error)
+                completion(nil)
+            } else {
+                completion(url?.absoluteString)
+            }
+        }
+
     }
 
 
