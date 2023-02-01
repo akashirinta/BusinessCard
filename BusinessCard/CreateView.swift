@@ -49,7 +49,7 @@ struct CreateView: View {
                             .frame(width: 200, height: 200)
                             .clipShape(Circle())
                     }
-                    Spacer().frame(height: 32)
+                    Spacer().frame(height: 30)
                     Button(action: {
                         showingImagePicker = true
                     }) {

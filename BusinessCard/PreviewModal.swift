@@ -18,6 +18,6 @@ struct PreviewModal: View {
 
 struct PreviewModal_Previews: PreviewProvider {
     static var previews: some View {
-        PreviewModal(cardInfo: Card(name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
+        PreviewModal(cardInfo: Card(icon: "", name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
     }
 }

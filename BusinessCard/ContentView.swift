@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
 
     @State var tabSelection: Int = 1
-    var card: Card = Card(name: "name", furigana: "furigana", organizationName: "schoolname", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: "")
+    var card: Card = Card(icon: "", name: "name", furigana: "furigana", organizationName: "schoolname", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: "")
 
     init() {
         UITabBar.appearance().backgroundColor = .white

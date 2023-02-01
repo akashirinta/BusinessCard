@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct IconView: View {
+
+    let icon: String
+
     var body: some View {
-       Image("apple")
-            .resizable()
+        AsyncImage(url: URL(string: icon)) { phase in
+            if let image = phase.image {
+                image.resizable()
+            } else {
+                ProgressView()
+            }
+        }
             .frame(width: 50, height: 50)
-            .cornerRadius(50)
+            .clipShape(Circle())
     }
 }
 
 struct IconView_Previews: PreviewProvider {
     static var previews: some View {
-        IconView()
+        IconView(icon: "")
     }
 }

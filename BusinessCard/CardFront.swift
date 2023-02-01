@@ -28,7 +28,7 @@ struct CardFront: View {
                         .font(.title3)
                         .padding(.leading)
                     Spacer()
-                    IconView()
+                    IconView(icon: card.icon)
                                           
                         .padding([.top, .trailing])
                 }
@@ -83,7 +83,7 @@ struct CardFront: View {
 struct CardFront_Previews: PreviewProvider {
     static var previews: some View {
 
-        CardFront(card: Card(name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
+        CardFront(card: Card(icon: "", name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
 
     }
 }

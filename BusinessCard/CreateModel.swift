@@ -15,6 +15,7 @@ struct CreateModel {
 
     func saveData(card: Card) {
         user.getAuth().collection("cards").addDocument(data: [
+            "icon": card.icon,
             "name": card.name,
             "furigana": card.furigana,
             "organizationName": card.organizationName,
@@ -31,13 +32,16 @@ struct CreateModel {
         }
     }
 
+    // TODO: 画像ごとのフォルダを作成し保存できるようにする
+    // 例えば images/(uid)/(画像id).jpg
+    //or images/(作成日時)/(ランダム数).jpg
     func getImageURL(completion: @escaping (String?) -> ()) {
 
         let storageRef = Storage.storage().reference().child("images/myimage.jpg")
         storageRef.downloadURL { (url, error) in
             if let error = error {
                 print(error)
-                completion(nil)
+                completion("")
             } else {
                 completion(url?.absoluteString)
             }

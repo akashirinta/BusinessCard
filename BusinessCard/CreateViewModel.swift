@@ -28,6 +28,7 @@ class CreateViewModel: ObservableObject {
     }
 
     // TODO: 何度も呼ばれるのを解消したい
+    // モーダル出現時に2回・消すときに1回呼ばれている
     func createdCardInfo() -> Card {
         model.getImageURL() { [self] (url) in
             if let url = url {
@@ -36,6 +37,7 @@ class CreateViewModel: ObservableObject {
         }
 
         return Card(
+            icon: imageUrl,
             name: name,
             furigana: furigana,
             organizationName: organizationName,

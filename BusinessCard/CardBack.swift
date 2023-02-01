@@ -54,7 +54,7 @@ struct CardBack: View {
 
 struct CardBack_Previews: PreviewProvider {
     static var previews: some View {
-        CardBack(card: Card(name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
+        CardBack(card: Card(icon: "", name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
 
     }
 }
