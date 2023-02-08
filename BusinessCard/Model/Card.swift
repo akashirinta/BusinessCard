@@ -29,7 +29,7 @@ struct Card: Codable {
         self.mailaddress = mailaddress
         self.phoneNumber = phoneNumber
         self.address = address
-        self.twitter = "https://twitter.com/\(twitter ?? ""))"
+        self.twitter = "https://twitter.com/\(twitter ?? "")"
         self.Instagram = "https://www.instagram.com/\(Instagram ?? "")"
         
     }
