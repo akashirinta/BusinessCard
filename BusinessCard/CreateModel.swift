@@ -7,13 +7,21 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseStorage
 
 struct CreateModel {
 
+    let userID = "qppSOpqb6mc8VeNV6i54"
     let user = User(uuid: "qppSOpqb6mc8VeNV6i54", name: "fuma")
+    let dateFormmater = DateFormatter()
+
+    init() {
+        dateFormmater.dateFormat = "YYYYMMddHHmm"
+    }
 
     func saveData(card: Card) {
         user.getAuth().collection("cards").addDocument(data: [
+            "icon": card.icon,
             "name": card.name,
             "furigana": card.furigana,
             "organizationName": card.organizationName,
@@ -28,6 +36,26 @@ struct CreateModel {
             }
 
         }
+    }
+
+    // TODO: 画像ごとのフォルダを作成し保存できるようにする
+    // 例えば images/(uid)/(画像id).jpg
+    //or images/(作成日時)/(ランダム数).jpg
+    func getImageURL(completion: @escaping (String?) -> ()) {
+        let date = Date(timeIntervalSince1970: TimeInterval(Int(Date().timeIntervalSince1970)))
+        let timestamp = dateFormmater.string(from: date)
+        let fileName = "\(userID)-\(timestamp)"
+
+        let storageRef = Storage.storage().reference().child("images/\(userID)/\(fileName).jpg")
+        storageRef.downloadURL { (url, error) in
+            if let error = error {
+                print(error)
+                completion("")
+            } else {
+                completion(url?.absoluteString)
+            }
+        }
+
     }
 
 

@@ -11,6 +11,7 @@ struct CreateView: View {
 
     @ObservedObject private var viewModel = CreateViewModel()
     @Binding var tabSelection: Int
+
     @State var showingImagePicker = false
     @State private var isChecked = false
     @State private var showPreview = false
@@ -48,7 +49,7 @@ struct CreateView: View {
                             .frame(width: 200, height: 200)
                             .clipShape(Circle())
                     }
-                    Spacer().frame(height: 32)
+                    Spacer().frame(height: 30)
                     Button(action: {
                         showingImagePicker = true
                     }) {

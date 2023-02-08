@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import SwiftUI
+import FirebaseStorage
 
 // コピペ
 // URL: https://www.yururiwork.net/archives/1404
@@ -48,6 +49,25 @@ struct ImagePicker: UIViewControllerRepresentable {
 
             if let image = info[.originalImage] as? UIImage {
                 parent.selectedImage = image
+            }
+
+            let dateFormmater = DateFormatter()
+            dateFormmater.dateFormat = "YYYYMMddHHmm"
+
+            let uuid = "qppSOpqb6mc8VeNV6i54"
+            let date = Date(timeIntervalSince1970: TimeInterval(Int(Date().timeIntervalSince1970)))
+            let timestamp = dateFormmater.string(from: date)
+            let fileName = "\(uuid)-\(timestamp)"
+            let storageRef = Storage.storage().reference().child("images/\(uuid)/\(fileName).jpg")
+
+            if let data = parent.selectedImage?.jpegData(compressionQuality: 0.5) {
+                storageRef.putData(data, metadata: nil) { (metadata, error) in
+                    if error != nil {
+                        print(error!)
+                        return
+                    }
+                    print("Upload Successful!")
+                }
             }
 
             parent.presentationMode.wrappedValue.dismiss()

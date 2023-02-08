@@ -8,5 +8,6 @@ target 'BusinessCard' do
   # Pods for BusinessCard
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
+  pod 'FirebaseStorage'
 
 end
