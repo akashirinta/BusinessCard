@@ -45,6 +45,7 @@ struct Login: View {
                         .foregroundColor(.white)
                     Text("Appleでログイン")
                         .foregroundColor(.white)
+                        .font(.system(size: 10))
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
@@ -52,6 +53,7 @@ struct Login: View {
             }
             .background(Color.black.cornerRadius(5))
             .padding(.bottom, 18)
+            .frame(width: 200, height: 25)
 
 
             HStack {
@@ -61,6 +63,7 @@ struct Login: View {
                         .frame(width: 18, height: 18)
                     Text("Googleでログイン")
                         .foregroundColor(.white)
+                        .font(.system(size: 10))
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
@@ -68,11 +71,12 @@ struct Login: View {
             }
             .background(Color.blue.cornerRadius(5))
             .padding(.bottom, 18)
-            .frame(width: 210, height: 20)
+            .frame(width: 210, height: 50)
 
             Button(action: {}) {
                 Text("ログイン")
             }
+            .padding(.bottom, 10)
 
             Button(action: {}) {
                 Text("新規登録へ")
