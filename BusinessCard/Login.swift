@@ -28,7 +28,7 @@ struct Login: View {
                 .padding(.horizontal, 113)
                 .padding(.bottom, 29)
 
-            TextField("passward", text: $passward)
+            SecureField("passward", text: $passward)
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
                 .overlay(
