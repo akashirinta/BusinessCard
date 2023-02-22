@@ -46,7 +46,7 @@ struct Login: View {
                             .foregroundColor(.white)
                         Text("Appleでログイン")
                             .foregroundColor(.white)
-                            .font(.system(size: 10))
+                            .font(.system(size: 15))
                     }
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
@@ -64,7 +64,7 @@ struct Login: View {
                             .frame(width: 18, height: 18)
                         Text("Googleでログイン")
                             .foregroundColor(.white)
-                            .font(.system(size: 10))
+                            .font(.system(size: 15))
                     }
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)

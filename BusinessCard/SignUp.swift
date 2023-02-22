@@ -45,9 +45,9 @@ struct SignUp: View {
                 Group {
                     Image(systemName: "apple.logo")
                         .foregroundColor(.white)
-                    Text("Appleでログイン")
+                    Text("Appleで登録")
                         .foregroundColor(.white)
-                        .font(.system(size: 10))
+                        .font(.system(size: 15))
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
@@ -63,9 +63,9 @@ struct SignUp: View {
                     Image("googlelogo")
                         .resizable()
                         .frame(width: 18, height: 18)
-                    Text("Googleでログイン")
+                    Text("Googleで登録")
                         .foregroundColor(.white)
-                        .font(.system(size: 10))
+                        .font(.system(size: 15))
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
