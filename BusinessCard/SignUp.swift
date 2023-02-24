@@ -18,6 +18,17 @@ struct SignUp: View {
                 .frame(width: 255, height: 23)
                 .padding(.bottom, 59)
 
+            TextField("username", text: $viewModel.username)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 15)
+                        .stroke(lineWidth: 0)
+                )
+                .background(Color(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1).cgColor).cornerRadius(15))
+                .padding(.horizontal, 113)
+                .padding(.bottom, 10)
+
             TextField("email", text: $viewModel.email)
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
@@ -27,7 +38,7 @@ struct SignUp: View {
                 )
                 .background(Color(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1).cgColor).cornerRadius(15))
                 .padding(.horizontal, 113)
-                .padding(.bottom, 29)
+                .padding(.bottom, 10)
 
             SecureField("passward", text: $viewModel.password)
                 .padding(.horizontal, 10)

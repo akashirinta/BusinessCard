@@ -10,12 +10,12 @@ import FirebaseAuth
 
 struct AuthUser {
 
-    func createAuth(email: String, password: String) {
+    func createAuth(username: String, email: String, password: String) {
         print(email, password)
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let user = authResult?.user {
                 print(user.uid)
-                User(uuid: user.uid, name: "名無し").registrationUser()
+                User(uuid: user.uid, name: username).registrationUser()
             } else {
                 print(error!)
             }

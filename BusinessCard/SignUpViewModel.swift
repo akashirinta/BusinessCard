@@ -9,6 +9,7 @@ import Foundation
 
 class SignUpViewModel: ObservableObject {
 
+    @Published var username: String = ""
     @Published var email: String = ""
     @Published var password: String = ""
 
@@ -16,6 +17,6 @@ class SignUpViewModel: ObservableObject {
 
     func signUp() {
         
-        auth.createAuth(email: email, password: password)
+        auth.createAuth(username: username, email: email, password: password)
     }
 }
