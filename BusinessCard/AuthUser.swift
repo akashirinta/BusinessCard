@@ -14,9 +14,10 @@ struct AuthUser {
         print(email, password)
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let user = authResult?.user {
-                print(user)
+                print(user.uid)
+                User(uuid: user.uid, name: "名無し").registrationUser()
             } else {
-                print(error)
+                print(error!)
             }
         }
     }
