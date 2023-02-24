@@ -19,6 +19,8 @@
 		5A0FA979787999D9A038ACB9 /* Pods_BusinessCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9100242F616FF34B934A5 /* Pods_BusinessCard.framework */; };
 		F5F9A11729A3973A001AD719 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F9A11629A3973A001AD719 /* Login.swift */; };
 		F5F9A11929A3AF92001AD719 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F9A11829A3AF92001AD719 /* SignUp.swift */; };
+		F5F9A11B29A63E69001AD719 /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F9A11A29A63E69001AD719 /* AuthUser.swift */; };
+		F5F9A11D29A63F50001AD719 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F9A11C29A63F50001AD719 /* SignUpViewModel.swift */; };
 		F5FAEDCB295D9A8700E64997 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDCA295D9A8700E64997 /* CreateView.swift */; };
 		F5FAEDCD295D9DB000E64997 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */; };
 		F5FAEDD129646EC600E64997 /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDD029646EC600E64997 /* CreateViewModel.swift */; };
@@ -47,6 +49,8 @@
 		78B920588F6C5530747712F7 /* Pods-BusinessCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCard.debug.xcconfig"; path = "Target Support Files/Pods-BusinessCard/Pods-BusinessCard.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F9A11629A3973A001AD719 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F5F9A11829A3AF92001AD719 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		F5F9A11A29A63E69001AD719 /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
+		F5F9A11C29A63F50001AD719 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		F5FAEDCA295D9A8700E64997 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F5FAEDD029646EC600E64997 /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				F5F9A11829A3AF92001AD719 /* SignUp.swift */,
 				F5FAEDD029646EC600E64997 /* CreateViewModel.swift */,
 				F5F9A11629A3973A001AD719 /* Login.swift */,
+				F5F9A11C29A63F50001AD719 /* SignUpViewModel.swift */,
+				F5F9A11A29A63E69001AD719 /* AuthUser.swift */,
 				F5FAEDD229647E9A00E64997 /* CreateModel.swift */,
 				F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */,
 				2E01F16A295D78AF00D57070 /* CardView.swift */,
@@ -305,8 +311,10 @@
 				F5FAEE232969B95500E64997 /* User.swift in Sources */,
 				2E779B8E295F76D600110D64 /* WebViewT.swift in Sources */,
 				2E01F16D295D7ADF00D57070 /* CardFront.swift in Sources */,
+				F5F9A11D29A63F50001AD719 /* SignUpViewModel.swift in Sources */,
 				2E01F16B295D78AF00D57070 /* CardView.swift in Sources */,
 				2E779B8C295F723500110D64 /* WebViewI.swift in Sources */,
+				F5F9A11B29A63E69001AD719 /* AuthUser.swift in Sources */,
 				F5F9A11729A3973A001AD719 /* Login.swift in Sources */,
 				F5F9A11929A3AF92001AD719 /* SignUp.swift in Sources */,
 				2E779B90295F7BC900110D64 /* IconView.swift in Sources */,

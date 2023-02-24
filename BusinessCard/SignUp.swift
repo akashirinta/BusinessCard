@@ -9,8 +9,7 @@ import SwiftUI
 
 struct SignUp: View {
 
-    @State var email: String = ""
-    @State var passward: String = ""
+    @ObservedObject var viewModel = SignUpViewModel()
 
     var body: some View {
         VStack{
@@ -19,7 +18,7 @@ struct SignUp: View {
                 .frame(width: 255, height: 23)
                 .padding(.bottom, 59)
 
-            TextField("email", text: $email)
+            TextField("email", text: $viewModel.email)
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
                 .overlay(
@@ -30,7 +29,7 @@ struct SignUp: View {
                 .padding(.horizontal, 113)
                 .padding(.bottom, 29)
 
-            SecureField("passward", text: $passward)
+            SecureField("passward", text: $viewModel.password)
                 .padding(.horizontal, 10)
                 .padding(.vertical, 5)
                 .overlay(
@@ -75,7 +74,9 @@ struct SignUp: View {
             .padding(.bottom, 18)
             .frame(width: 210, height: 50)
 
-            Button(action: {}) {
+            Button(action: {
+                viewModel.signUp()
+            }) {
                 Text("登録")
             }
 
