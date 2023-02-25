@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct Login: View {
-    @State var email: String = ""
-    @State var passward: String = ""
+
+    @ObservedObject var viewModel = SignUpViewModel()
+
     var body: some View {
         NavigationView {
             VStack{
@@ -18,7 +19,7 @@ struct Login: View {
                     .frame(width: 255, height: 23)
                     .padding(.bottom, 59)
 
-                TextField("email", text: $email)
+                TextField("email", text: $viewModel.email)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
                     .overlay(
@@ -28,8 +29,9 @@ struct Login: View {
                     .background(Color(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1).cgColor).cornerRadius(15))
                     .padding(.horizontal, 113)
                     .padding(.bottom, 29)
+                    .textInputAutocapitalization(.never)
 
-                SecureField("passward", text: $passward)
+                SecureField("passward", text: $viewModel.password)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
                     .overlay(
@@ -39,6 +41,7 @@ struct Login: View {
                     .background(Color(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1).cgColor).cornerRadius(15))
                     .padding(.horizontal, 113)
                     .padding(.bottom, 59)
+                    .textInputAutocapitalization(.never)
 
                 HStack {
                     Group {
@@ -74,7 +77,9 @@ struct Login: View {
                 .padding(.bottom, 18)
                 .frame(width: 210, height: 50)
 
-                Button(action: {}) {
+                Button(action: {
+                    viewModel.signIn()
+                }) {
                     Text("ログイン")
                 }
                 .padding(.bottom, 10)

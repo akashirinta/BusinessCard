@@ -10,9 +10,11 @@ import FirebaseAuth
 
 struct AuthUser {
 
-    func createAuth(username: String, email: String, password: String) {
+    let auth = Auth.auth()
+
+    func signUp(username: String, email: String, password: String) {
         print(email, password)
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+        auth.createUser(withEmail: email, password: password) { authResult, error in
             if let user = authResult?.user {
                 print(user.uid)
                 User(uuid: user.uid, name: username).registrationUser()
@@ -21,4 +23,28 @@ struct AuthUser {
             }
         }
     }
+
+    func singIn(email: String, password: String) {
+        auth.signIn(withEmail: email, password: password) { authResult, error in
+            if let user = authResult?.user {
+                print(user.uid)
+                print("ログイン成功！")
+            } else {
+                print(error!)
+            }
+        }
+    }
+
+    func isLoginedIn() {
+        auth.addStateDidChangeListener { auth, user in
+            if user != nil {
+              // User is signed in.
+                print("サインインした！")
+            } else {
+              // No user is signed in.
+                print("残念")
+            }
+        }
+    }
+
 }

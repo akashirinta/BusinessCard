@@ -16,7 +16,14 @@ class SignUpViewModel: ObservableObject {
     var auth = AuthUser()
 
     func signUp() {
-        
-        auth.createAuth(username: username, email: email, password: password)
+        auth.signUp(
+            username: username,
+            email: email,
+            password: password
+        )
+    }
+
+    func signIn() {
+        auth.singIn(email: email, password: password)
     }
 }
