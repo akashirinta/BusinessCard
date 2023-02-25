@@ -28,6 +28,7 @@ struct SignUp: View {
                 .background(Color(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1).cgColor).cornerRadius(15))
                 .padding(.horizontal, 113)
                 .padding(.bottom, 10)
+                .textInputAutocapitalization(.never)
 
             TextField("email", text: $viewModel.email)
                 .padding(.horizontal, 10)
@@ -39,6 +40,7 @@ struct SignUp: View {
                 .background(Color(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1).cgColor).cornerRadius(15))
                 .padding(.horizontal, 113)
                 .padding(.bottom, 10)
+                .textInputAutocapitalization(.never)
 
             SecureField("passward", text: $viewModel.password)
                 .padding(.horizontal, 10)
@@ -50,6 +52,7 @@ struct SignUp: View {
                 .background(Color(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1).cgColor).cornerRadius(15))
                 .padding(.horizontal, 113)
                 .padding(.bottom, 59)
+                .textInputAutocapitalization(.never)
 
             HStack {
                 Group {
