@@ -61,6 +61,11 @@ struct ContentView: View {
             }
             .tag(3)
 
+            setting()
+                .tabItem {
+                    Label("setting", systemImage: "gearshape")
+                }
+
         }
 
     }
