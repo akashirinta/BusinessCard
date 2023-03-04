@@ -10,7 +10,7 @@ import UIKit
 
 struct Card: Codable {
 
-    var icon: String = ""
+    var icon: String?
     var name: String = ""
     var furigana: String = ""
     var organizationName: String = ""
@@ -20,9 +20,9 @@ struct Card: Codable {
     var twitter: String?
     var Instagram: String?
 
-    init(icon: String, name: String, furigana: String, organizationName: String, mailaddress: String?, phoneNumber: String?, address: String?, twitter: String?, Instagram: String?) {
+    init(icon: String?, name: String, furigana: String, organizationName: String, mailaddress: String?, phoneNumber: String?, address: String?, twitter: String?, Instagram: String?) {
 
-        self.icon = icon
+        self.icon = icon ?? "https://drive.google.com/file/d/1_HQqFQgWBjQNyUiiw30_fvo7Jl9ihiJp/view?usp=sharing"
         self.name = name
         self.furigana = furigana
         self.organizationName = organizationName

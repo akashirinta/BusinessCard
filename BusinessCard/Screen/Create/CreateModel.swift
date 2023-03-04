@@ -21,7 +21,7 @@ struct CreateModel {
 
     func saveData(card: Card) {
         user.getUser().collection("cards").addDocument(data: [
-            "icon": card.icon,
+            "icon": card.icon!,
             "name": card.name,
             "furigana": card.furigana,
             "organizationName": card.organizationName,

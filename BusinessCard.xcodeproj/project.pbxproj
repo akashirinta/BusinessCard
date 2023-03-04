@@ -49,7 +49,7 @@
 		2E779B8F295F7BC900110D64 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		4DE9100242F616FF34B934A5 /* Pods_BusinessCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusinessCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B920588F6C5530747712F7 /* Pods-BusinessCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCard.debug.xcconfig"; path = "Target Support Files/Pods-BusinessCard/Pods-BusinessCard.debug.xcconfig"; sourceTree = "<group>"; };
-		F506F8AF29AF88F000B728B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = BusinessCard/HomeView.swift; sourceTree = SOURCE_ROOT; };
+		F506F8AF29AF88F000B728B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = BusinessCard/Screen/HomeView.swift; sourceTree = SOURCE_ROOT; };
 		F51097EB29A927B200CE6320 /* setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setting.swift; sourceTree = "<group>"; };
 		F5F9A11629A3973A001AD719 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F5F9A11829A3AF92001AD719 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
@@ -115,24 +115,7 @@
 				F5FAEDE02965D65C00E64997 /* Resouce */,
 				F5FAEDD92965BE8400E64997 /* Model */,
 				F5FAEDD629649B2E00E64997 /* Utility */,
-				2E01F15E295D731A00D57070 /* ContentView.swift */,
-				F506F8AF29AF88F000B728B4 /* HomeView.swift */,
-				F5FAEDCA295D9A8700E64997 /* CreateView.swift */,
-				F51097EB29A927B200CE6320 /* setting.swift */,
-				F5FAEDD42964863000E64997 /* PreviewModal.swift */,
-				F5F9A11829A3AF92001AD719 /* SignUp.swift */,
-				F5FAEDD029646EC600E64997 /* CreateViewModel.swift */,
-				F5F9A11629A3973A001AD719 /* LoginView.swift */,
-				F5F9A11C29A63F50001AD719 /* SignUpViewModel.swift */,
-				F5F9A11A29A63E69001AD719 /* AuthUser.swift */,
-				F5FAEDD229647E9A00E64997 /* CreateModel.swift */,
-				F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */,
-				2E01F16A295D78AF00D57070 /* CardView.swift */,
-				2E01F16C295D7ADF00D57070 /* CardFront.swift */,
-				2E01F16E295D7B0100D57070 /* CardBack.swift */,
-				2E779B8F295F7BC900110D64 /* IconView.swift */,
-				2E779B8D295F76D600110D64 /* WebViewT.swift */,
-				2E779B8B295F723500110D64 /* WebViewI.swift */,
+				F5D0FAEC29B395CA00F65C37 /* Screen */,
 				2E01F160295D731B00D57070 /* Assets.xcassets */,
 				2E01F162295D731B00D57070 /* Preview Content */,
 			);
@@ -155,6 +138,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F5D0FAEC29B395CA00F65C37 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F5D0FAED29B395DA00F65C37 /* Card */,
+				2E01F15E295D731A00D57070 /* ContentView.swift */,
+				F506F8AF29AF88F000B728B4 /* HomeView.swift */,
+				F5D0FAEE29B39AA000F65C37 /* Create */,
+				F5F9A11829A3AF92001AD719 /* SignUp.swift */,
+				F5F9A11629A3973A001AD719 /* LoginView.swift */,
+				F5F9A11C29A63F50001AD719 /* SignUpViewModel.swift */,
+				F51097EB29A927B200CE6320 /* setting.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		F5D0FAED29B395DA00F65C37 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				2E779B8F295F7BC900110D64 /* IconView.swift */,
+				2E01F16A295D78AF00D57070 /* CardView.swift */,
+				2E01F16C295D7ADF00D57070 /* CardFront.swift */,
+				2E01F16E295D7B0100D57070 /* CardBack.swift */,
+				2E779B8D295F76D600110D64 /* WebViewT.swift */,
+				2E779B8B295F723500110D64 /* WebViewI.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		F5D0FAEE29B39AA000F65C37 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAEDCA295D9A8700E64997 /* CreateView.swift */,
+				F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */,
+				F5FAEDD029646EC600E64997 /* CreateViewModel.swift */,
+				F5FAEDD42964863000E64997 /* PreviewModal.swift */,
+				F5FAEDD229647E9A00E64997 /* CreateModel.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
 		F5FAEDD629649B2E00E64997 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +191,7 @@
 			children = (
 				F5FAEDDA2965BE8F00E64997 /* Card.swift */,
 				F5FAEE222969B95500E64997 /* User.swift */,
+				F5F9A11A29A63E69001AD719 /* AuthUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
