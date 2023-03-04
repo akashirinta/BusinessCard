@@ -1,5 +1,5 @@
 //
-//  Login.swift
+//  LoginView.swift
 //  BusinessCard
 //
 //  Created by 出口楓真 on 2023/02/20.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct Login: View {
+struct LoginView: View {
 
     @ObservedObject var viewModel = SignUpViewModel()
 
     var body: some View {
         NavigationView {
-            VStack{
+            VStack {
                 Text("名刺作成アプリ(仮)")
                     .font(.system(size: 25))
                     .frame(width: 255, height: 23)
@@ -27,8 +27,8 @@ struct Login: View {
                             .stroke(lineWidth: 0)
                     )
                     .background(Color(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1).cgColor).cornerRadius(15))
-                    .padding(.horizontal, 113)
-                    .padding(.bottom, 29)
+                    .padding(.horizontal, 100)
+                    .padding(.bottom, 30)
                     .textInputAutocapitalization(.never)
 
                 SecureField("passward", text: $viewModel.password)
@@ -39,8 +39,8 @@ struct Login: View {
                             .stroke(lineWidth: 0)
                     )
                     .background(Color(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1).cgColor).cornerRadius(15))
-                    .padding(.horizontal, 113)
-                    .padding(.bottom, 59)
+                    .padding(.horizontal, 100)
+                    .padding(.bottom, 60)
                     .textInputAutocapitalization(.never)
 
                 HStack {
@@ -96,6 +96,6 @@ struct Login: View {
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
-        Login()
+        LoginView()
     }
 }

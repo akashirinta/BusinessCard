@@ -13,7 +13,7 @@ class SignUpViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
 
-    var auth = AuthUser()
+    var auth = AuthUser.shared
 
     func signUp() {
         auth.signUp(
@@ -24,6 +24,10 @@ class SignUpViewModel: ObservableObject {
     }
 
     func signIn() {
-        auth.singIn(email: email, password: password)
+        auth.signIn(email: email, password: password)
+    }
+
+    func signOut() {
+        auth.signOut()
     }
 }

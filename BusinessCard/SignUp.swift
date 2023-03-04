@@ -10,6 +10,7 @@ import SwiftUI
 struct SignUp: View {
 
     @ObservedObject var viewModel = SignUpViewModel()
+    @Environment(\.dismiss) var dismiss
 
     var body: some View {
         VStack{
@@ -94,6 +95,16 @@ struct SignUp: View {
                 Text("登録")
             }
 
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: {
+                    dismiss()
+                }) {
+                    Text("← ログイン画面")
+                }
+            }
         }
     }
 }

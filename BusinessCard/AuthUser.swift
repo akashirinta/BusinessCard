@@ -8,43 +8,46 @@
 import Foundation
 import FirebaseAuth
 
-struct AuthUser {
+class AuthUser: ObservableObject {
 
     let auth = Auth.auth()
+    @Published private(set) var isLoggined: Bool = (Auth.auth().currentUser != nil)
+    static let shared = AuthUser()
+    private init() {
+
+    }
 
     func signUp(username: String, email: String, password: String) {
         print(email, password)
         auth.createUser(withEmail: email, password: password) { authResult, error in
             if let user = authResult?.user {
-                print(user.uid)
                 User(uuid: user.uid, name: username).registrationUser()
+                self.isLoggined = true
+
             } else {
                 print(error!)
+                self.isLoggined = true
             }
         }
     }
 
-    func singIn(email: String, password: String) {
+    func signIn(email: String, password: String) {
         auth.signIn(withEmail: email, password: password) { authResult, error in
-            if let user = authResult?.user {
-                print(user.uid)
-                print("ログイン成功！")
+            if (authResult?.user) != nil {
+                self.isLoggined = true
             } else {
                 print(error!)
+                self.isLoggined = false
             }
         }
     }
 
-    func isLoginedIn() {
-        auth.addStateDidChangeListener { auth, user in
-            if user != nil {
-              // User is signed in.
-                print("サインインした！")
-            } else {
-              // No user is signed in.
-                print("残念")
-            }
+    func signOut() {
+        do {
+            try auth.signOut()
+            self.isLoggined = false
+        } catch {
+            print("error")
         }
     }
-
 }

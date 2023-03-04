@@ -10,19 +10,13 @@ import FirebaseAuth
 
 struct setting: View {
 
-    @State  var isActive:Bool = false
-
+    @ObservedObject var viewModel = SignUpViewModel()
     var body: some View {
         NavigationView {
             VStack {
 
                 Button(action: {
-                    do {
-                        try Auth.auth().signOut()
-                        isActive = true
-                    } catch {
-                        print("error")
-                    }
+                    viewModel.signOut()
                 }) {
                     Text("ログアウト")
                 }
