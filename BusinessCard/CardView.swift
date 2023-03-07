@@ -22,16 +22,21 @@ struct CardView: View {
                     )
                     .rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))
             } else {
-
-                CardFront(card: card)
-
-                    .overlay(
-                    RoundedRectangle(cornerRadius: 16)
-                        .stroke(Color.black, lineWidth: 2)
-                    )
+            
+                    CardFront(card: card)
                     
+                       
+    //
+                    
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(Color.black, lineWidth: 2)
+                        )
+                        
+                    
+                    .rotation3DEffect(.degrees(isFlipped ? 180 : 0),axis: (x: 0, y: 1, z: 0))
                 
-                .rotation3DEffect(.degrees(isFlipped ? 180 : 0),axis: (x: 0, y: 1, z: 0))    }
+               }
             }
         
         .onTapGesture {
@@ -54,3 +59,4 @@ struct CardView_Previews: PreviewProvider {
         
     }
 }
+//card: Card(icon: "", name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: "")

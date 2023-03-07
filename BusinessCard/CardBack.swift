@@ -16,8 +16,8 @@ struct CardBack: View {
     var body: some View {
         ZStack{
             Rectangle()
-                .frame(width: 300, height: 200)
-                .foregroundColor(.blue)
+                .frame(width: 280, height: 180)
+                .foregroundColor(Color(hue: 0.64, saturation: 0.268, brightness: 1.0))
                 .cornerRadius(15)
             VStack{
                 Text("Address")
@@ -45,7 +45,7 @@ struct CardBack: View {
             }
             .rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))
             .scaleEffect(x: 1, y: -1, anchor: .center)
-            .frame(width: 300, height: 200)
+            .frame(width: 280, height: 180)
             
         }
         
