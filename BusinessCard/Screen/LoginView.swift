@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
 
-    @ObservedObject var viewModel = SignUpViewModel()
+    @StateObject var viewModel = SignUpViewModel()
 
     var body: some View {
         NavigationView {
@@ -42,6 +42,9 @@ struct LoginView: View {
                     .padding(.horizontal, 100)
                     .padding(.bottom, 60)
                     .textInputAutocapitalization(.never)
+
+                Text(viewModel.errorMsg)
+                    .foregroundColor(.red)
 
                 HStack {
                     Group {
@@ -78,6 +81,7 @@ struct LoginView: View {
                 .frame(width: 210, height: 50)
 
                 Button(action: {
+                    viewModel.isValidated(isSignUp: false)
                     viewModel.signIn()
                 }) {
                     Text("ログイン")
