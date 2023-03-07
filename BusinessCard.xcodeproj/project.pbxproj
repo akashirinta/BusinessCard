@@ -10,7 +10,14 @@
 		2E01F15F295D731A00D57070 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F15E295D731A00D57070 /* ContentView.swift */; };
 		2E01F161295D731B00D57070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E01F160295D731B00D57070 /* Assets.xcassets */; };
 		2E01F164295D731B00D57070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E01F163295D731B00D57070 /* Preview Assets.xcassets */; };
-		5A0FA979787999D9A038ACB9 /* Pods_BusinessCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9100242F616FF34B934A5 /* Pods_BusinessCard.framework */; };
+		2E01F16B295D78AF00D57070 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16A295D78AF00D57070 /* CardView.swift */; };
+		2E01F16D295D7ADF00D57070 /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16C295D7ADF00D57070 /* CardFront.swift */; };
+		2E01F16F295D7B0100D57070 /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16E295D7B0100D57070 /* CardBack.swift */; };
+		2E401EAF29B3417E00C2AC92 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E401EAE29B3417E00C2AC92 /* IconToggle.swift */; };
+		2E779B8C295F723500110D64 /* WebViewI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8B295F723500110D64 /* WebViewI.swift */; };
+		2E779B8E295F76D600110D64 /* WebViewT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8D295F76D600110D64 /* WebViewT.swift */; };
+		2E779B90295F7BC900110D64 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8F295F7BC900110D64 /* IconView.swift */; };
+		56D0441DF72E247C48BC4070 /* Pods_BusinessCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69C1BCE5A92C67B9FBA6F66 /* Pods_BusinessCard.framework */; };
 		F5FAEDCB295D9A8700E64997 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDCA295D9A8700E64997 /* CreateView.swift */; };
 		F5FAEDCD295D9DB000E64997 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */; };
 		F5FAEDD129646EC600E64997 /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDD029646EC600E64997 /* CreateViewModel.swift */; };
@@ -22,13 +29,6 @@
 		F5FAEDE72965DB9E00E64997 /* BusinessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDE62965DB9E00E64997 /* BusinessCardApp.swift */; };
 		F5FAEDEA2965DBF100E64997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEDE92965DBF100E64997 /* AppDelegate.swift */; };
 		F5FAEE232969B95500E64997 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FAEE222969B95500E64997 /* User.swift */; };
-		2E01F16B295D78AF00D57070 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16A295D78AF00D57070 /* CardView.swift */; };
-		2E01F16D295D7ADF00D57070 /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16C295D7ADF00D57070 /* CardFront.swift */; };
-		2E01F16F295D7B0100D57070 /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01F16E295D7B0100D57070 /* CardBack.swift */; };
-		2E779B8C295F723500110D64 /* WebViewI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8B295F723500110D64 /* WebViewI.swift */; };
-		2E779B8E295F76D600110D64 /* WebViewT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8D295F76D600110D64 /* WebViewT.swift */; };
-		2E779B90295F7BC900110D64 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E779B8F295F7BC900110D64 /* IconView.swift */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,16 @@
 		2E01F15E295D731A00D57070 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E01F160295D731B00D57070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E01F163295D731B00D57070 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4DE9100242F616FF34B934A5 /* Pods_BusinessCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusinessCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78B920588F6C5530747712F7 /* Pods-BusinessCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCard.debug.xcconfig"; path = "Target Support Files/Pods-BusinessCard/Pods-BusinessCard.debug.xcconfig"; sourceTree = "<group>"; };
+		2E01F16A295D78AF00D57070 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2E01F16C295D7ADF00D57070 /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
+		2E01F16E295D7B0100D57070 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
+		2E401EAE29B3417E00C2AC92 /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
+		2E779B8B295F723500110D64 /* WebViewI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewI.swift; sourceTree = "<group>"; };
+		2E779B8D295F76D600110D64 /* WebViewT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewT.swift; sourceTree = "<group>"; };
+		2E779B8F295F7BC900110D64 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		4F53FA3313FC230F148E28C6 /* Pods-BusinessCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCard.release.xcconfig"; path = "Target Support Files/Pods-BusinessCard/Pods-BusinessCard.release.xcconfig"; sourceTree = "<group>"; };
+		A69C1BCE5A92C67B9FBA6F66 /* Pods_BusinessCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusinessCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC77E21171D1E9B603B18F7 /* Pods-BusinessCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCard.debug.xcconfig"; path = "Target Support Files/Pods-BusinessCard/Pods-BusinessCard.debug.xcconfig"; sourceTree = "<group>"; };
 		F5FAEDCA295D9A8700E64997 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F5FAEDD029646EC600E64997 /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
@@ -49,13 +57,6 @@
 		F5FAEDE62965DB9E00E64997 /* BusinessCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BusinessCardApp.swift; path = BusinessCard/App/BusinessCardApp.swift; sourceTree = SOURCE_ROOT; };
 		F5FAEDE92965DBF100E64997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FAEE222969B95500E64997 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FA7810769F457839051F0E70 /* Pods-BusinessCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessCard.release.xcconfig"; path = "Target Support Files/Pods-BusinessCard/Pods-BusinessCard.release.xcconfig"; sourceTree = "<group>"; };
-		2E01F16A295D78AF00D57070 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		2E01F16C295D7ADF00D57070 /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
-		2E01F16E295D7B0100D57070 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
-		2E779B8B295F723500110D64 /* WebViewI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewI.swift; sourceTree = "<group>"; };
-		2E779B8D295F76D600110D64 /* WebViewT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewT.swift; sourceTree = "<group>"; };
-		2E779B8F295F7BC900110D64 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A0FA979787999D9A038ACB9 /* Pods_BusinessCard.framework in Frameworks */,
+				56D0441DF72E247C48BC4070 /* Pods_BusinessCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +74,8 @@
 		1B196637CC85DB89FC2E10A8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				78B920588F6C5530747712F7 /* Pods-BusinessCard.debug.xcconfig */,
-				FA7810769F457839051F0E70 /* Pods-BusinessCard.release.xcconfig */,
+				BCC77E21171D1E9B603B18F7 /* Pods-BusinessCard.debug.xcconfig */,
+				4F53FA3313FC230F148E28C6 /* Pods-BusinessCard.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -85,7 +86,7 @@
 				2E01F15B295D731A00D57070 /* BusinessCard */,
 				2E01F15A295D731A00D57070 /* Products */,
 				1B196637CC85DB89FC2E10A8 /* Pods */,
-				6CE18E20DB5AB417ADC74A83 /* Frameworks */,
+				E0525512D513FC61FA85234F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +117,7 @@
 				2E779B8F295F7BC900110D64 /* IconView.swift */,
 				2E779B8D295F76D600110D64 /* WebViewT.swift */,
 				2E779B8B295F723500110D64 /* WebViewI.swift */,
+				2E401EAE29B3417E00C2AC92 /* IconToggle.swift */,
 				2E01F160295D731B00D57070 /* Assets.xcassets */,
 				2E01F162295D731B00D57070 /* Preview Content */,
 			);
@@ -130,10 +132,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		6CE18E20DB5AB417ADC74A83 /* Frameworks */ = {
+		E0525512D513FC61FA85234F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4DE9100242F616FF34B934A5 /* Pods_BusinessCard.framework */,
+				A69C1BCE5A92C67B9FBA6F66 /* Pods_BusinessCard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,11 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E01F167295D731B00D57070 /* Build configuration list for PBXNativeTarget "BusinessCard" */;
 			buildPhases = (
-				9A9FAFDD341196F73633E750 /* [CP] Check Pods Manifest.lock */,
+				DDC142520FB9E659784B4C6C /* [CP] Check Pods Manifest.lock */,
 				2E01F155295D731A00D57070 /* Sources */,
 				2E01F156295D731A00D57070 /* Frameworks */,
 				2E01F157295D731A00D57070 /* Resources */,
-				8CEBF1BEB8EE193AF3367D67 /* [CP] Embed Pods Frameworks */,
+				AA0C09F1418A10A79B2CDAF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,7 +243,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8CEBF1BEB8EE193AF3367D67 /* [CP] Embed Pods Frameworks */ = {
+		AA0C09F1418A10A79B2CDAF6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,7 +260,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BusinessCard/Pods-BusinessCard-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A9FAFDD341196F73633E750 /* [CP] Check Pods Manifest.lock */ = {
+		DDC142520FB9E659784B4C6C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,12 +301,12 @@
 				F5FAEDD329647E9A00E64997 /* CreateModel.swift in Sources */,
 				F5FAEE232969B95500E64997 /* User.swift in Sources */,
 				2E779B8E295F76D600110D64 /* WebViewT.swift in Sources */,
+				2E401EAF29B3417E00C2AC92 /* IconToggle.swift in Sources */,
 				2E01F16D295D7ADF00D57070 /* CardFront.swift in Sources */,
 				2E01F16B295D78AF00D57070 /* CardView.swift in Sources */,
 				2E779B8C295F723500110D64 /* WebViewI.swift in Sources */,
 				2E779B90295F7BC900110D64 /* IconView.swift in Sources */,
 				2E01F16F295D7B0100D57070 /* CardBack.swift in Sources */,
-				2E01F15D295D731A00D57070 /* BusinessCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,14 +429,14 @@
 		};
 		2E01F168295D731B00D57070 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78B920588F6C5530747712F7 /* Pods-BusinessCard.debug.xcconfig */;
+			baseConfigurationReference = BCC77E21171D1E9B603B18F7 /* Pods-BusinessCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BusinessCard/Preview Content\"";
-				DEVELOPMENT_TEAM = 94M9FJ82WR;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -458,14 +460,14 @@
 		};
 		2E01F169295D731B00D57070 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA7810769F457839051F0E70 /* Pods-BusinessCard.release.xcconfig */;
+			baseConfigurationReference = 4F53FA3313FC230F148E28C6 /* Pods-BusinessCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BusinessCard/Preview Content\"";
-				DEVELOPMENT_TEAM = 94M9FJ82WR;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

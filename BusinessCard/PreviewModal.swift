@@ -21,3 +21,4 @@ struct PreviewModal_Previews: PreviewProvider {
         PreviewModal(cardInfo: Card(icon: "", name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
     }
 }
+
