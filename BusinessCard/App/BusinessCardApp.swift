@@ -11,7 +11,7 @@ import SwiftUI
 struct BusinessCardApp: App {
 
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
+
     var body: some Scene {
         WindowGroup {
             ContentView()

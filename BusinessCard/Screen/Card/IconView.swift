@@ -12,8 +12,8 @@ struct IconView: View {
     let icon: String
     
     var body: some View {
-        AsyncImage(url: URL(string: "icon")) { phase in
-            if let image = phase.image {
+        AsyncImage(url: URL(string: icon)) { image in
+            if let image = image.image {
                 image.resizable()
             } else {
                 ProgressView()
