@@ -26,7 +26,7 @@ class AuthUser: ObservableObject {
 
             } else {
                 print(error!)
-                self.isLoggined = true
+                self.isLoggined = false
             }
         }
     }
