@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct IconView: View {
-
+    
     let icon: String
-
+    
     var body: some View {
         AsyncImage(url: URL(string: "icon")) { phase in
             if let image = phase.image {
@@ -19,8 +19,8 @@ struct IconView: View {
                 ProgressView()
             }
         }
-            .frame(width: 50, height: 50)
-            .clipShape(Circle())
+        .frame(width: 50, height: 50)
+        .clipShape(Circle())
     }
 }
 
@@ -29,4 +29,3 @@ struct IconView_Previews: PreviewProvider {
         IconView(icon: "")
     }
 }
-//icon: ""

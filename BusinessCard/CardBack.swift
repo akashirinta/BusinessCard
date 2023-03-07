@@ -28,9 +28,11 @@ struct CardBack: View {
                     }) {
                         Image("i")
                             .resizable()
-                        .frame(width: 50, height: 50)                    }.sheet(isPresented: $isWebViewI){
-                            WebViewI()
-                        }
+                            .frame(width: 50, height: 50)
+                    }
+                    .sheet(isPresented: $isWebViewI){
+                        WebViewI()
+                    }
                     Button(action: {
                         isWebViewT = true
                     }) {
@@ -40,21 +42,17 @@ struct CardBack: View {
                     }.sheet(isPresented: $isWebViewT){
                         WebViewT()
                     }
-                  
                 }
             }
             .rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))
             .scaleEffect(x: 1, y: -1, anchor: .center)
             .frame(width: 280, height: 180)
-            
         }
-        
     }
 }
 
 struct CardBack_Previews: PreviewProvider {
     static var previews: some View {
         CardBack(card: Card(icon: "", name: "", furigana: "", organizationName: "", mailaddress: "", phoneNumber: "", address: "", twitter: "", Instagram: ""))
-
     }
 }

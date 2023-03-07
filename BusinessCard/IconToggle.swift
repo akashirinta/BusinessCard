@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct IconToggle: View {
+    
     @Binding var isOn: Bool
     let onImage: String
     let offImage: String
