@@ -25,7 +25,7 @@ struct CardFront: View {
                         .font(.title3)
                         .padding(.leading)
                     Spacer()
-                    IconView(icon: card.icon)
+                    IconView(icon: card.icon!)
                         .padding([.top, .trailing])
                 }
                 Spacer()
