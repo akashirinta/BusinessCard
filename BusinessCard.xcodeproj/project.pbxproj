@@ -105,19 +105,7 @@
 				F5FAEDE02965D65C00E64997 /* Resouce */,
 				F5FAEDD92965BE8400E64997 /* Model */,
 				F5FAEDD629649B2E00E64997 /* Utility */,
-				2E01F15E295D731A00D57070 /* ContentView.swift */,
-				F5FAEDCA295D9A8700E64997 /* CreateView.swift */,
-				F5FAEDD42964863000E64997 /* PreviewModal.swift */,
-				F5FAEDD029646EC600E64997 /* CreateViewModel.swift */,
-				F5FAEDD229647E9A00E64997 /* CreateModel.swift */,
-				F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */,
-				2E01F16A295D78AF00D57070 /* CardView.swift */,
-				2E01F16C295D7ADF00D57070 /* CardFront.swift */,
-				2E01F16E295D7B0100D57070 /* CardBack.swift */,
-				2E779B8F295F7BC900110D64 /* IconView.swift */,
-				2E779B8D295F76D600110D64 /* WebViewT.swift */,
-				2E779B8B295F723500110D64 /* WebViewI.swift */,
-				2E401EAE29B3417E00C2AC92 /* IconToggle.swift */,
+				F55D243B29B7922E005D50F0 /* Screen */,
 				2E01F160295D731B00D57070 /* Assets.xcassets */,
 				2E01F162295D731B00D57070 /* Preview Content */,
 			);
@@ -138,6 +126,43 @@
 				A69C1BCE5A92C67B9FBA6F66 /* Pods_BusinessCard.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F55D243B29B7922E005D50F0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F55D243D29B7928C005D50F0 /* Create */,
+				F55D243C29B79257005D50F0 /* Card */,
+				2E01F15E295D731A00D57070 /* ContentView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		F55D243C29B79257005D50F0 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				2E01F16A295D78AF00D57070 /* CardView.swift */,
+				2E01F16C295D7ADF00D57070 /* CardFront.swift */,
+				2E01F16E295D7B0100D57070 /* CardBack.swift */,
+				2E779B8F295F7BC900110D64 /* IconView.swift */,
+				2E779B8D295F76D600110D64 /* WebViewT.swift */,
+				2E779B8B295F723500110D64 /* WebViewI.swift */,
+				2E401EAE29B3417E00C2AC92 /* IconToggle.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		F55D243D29B7928C005D50F0 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAEDCA295D9A8700E64997 /* CreateView.swift */,
+				F5FAEDD42964863000E64997 /* PreviewModal.swift */,
+				F5FAEDD029646EC600E64997 /* CreateViewModel.swift */,
+				F5FAEDD229647E9A00E64997 /* CreateModel.swift */,
+				F5FAEDCC295D9DB000E64997 /* ImagePicker.swift */,
+			);
+			name = Create;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		F5FAEDD629649B2E00E64997 /* Utility */ = {
