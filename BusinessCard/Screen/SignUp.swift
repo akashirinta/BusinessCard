@@ -55,6 +55,9 @@ struct SignUp: View {
                 .padding(.bottom, 59)
                 .textInputAutocapitalization(.never)
 
+            Text(viewModel.errorMsg)
+                .foregroundColor(.red)
+
             HStack {
                 Group {
                     Image(systemName: "apple.logo")
@@ -90,6 +93,7 @@ struct SignUp: View {
             .frame(width: 210, height: 50)
 
             Button(action: {
+                viewModel.isValidated(isSignUp: true)
                 viewModel.signUp()
             }) {
                 Text("登録")

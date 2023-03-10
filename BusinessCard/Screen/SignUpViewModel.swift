@@ -33,6 +33,7 @@ class SignUpViewModel: ObservableObject {
     }
 
     func isValidated(isSignUp: Bool) {
+        errorMsg = ""
         if isSignUp {
             if username == "" {
                 errorMsg += "ユーザー名を入力してください\n"
@@ -43,6 +44,8 @@ class SignUpViewModel: ObservableObject {
         }
         if password == "" {
             errorMsg += "パスワードを入力してください\n"
+        } else if password.count < 6 {
+            errorMsg += "パスワードは6文字以上入力してください\n"
         }
     }
 }
