@@ -58,10 +58,10 @@
 		F560888129B79ADA00DF82E9 /* PreviewModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewModal.swift; sourceTree = "<group>"; };
 		F56088A129B79B6E00DF82E9 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = BusinessCard/Screen/HomeView.swift; sourceTree = SOURCE_ROOT; };
 		F56088A229B79B6E00DF82E9 /* setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = setting.swift; path = BusinessCard/Screen/setting.swift; sourceTree = SOURCE_ROOT; };
-		F56088A329B79B6E00DF82E9 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = BusinessCard/Screen/LoginView.swift; sourceTree = SOURCE_ROOT; };
-		F56088A429B79B6E00DF82E9 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = BusinessCard/Screen/SignUpViewModel.swift; sourceTree = SOURCE_ROOT; };
+		F56088A329B79B6E00DF82E9 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = BusinessCard/Screen/authScreens/LoginView.swift; sourceTree = SOURCE_ROOT; };
+		F56088A429B79B6E00DF82E9 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = BusinessCard/Screen/authScreens/SignUpViewModel.swift; sourceTree = SOURCE_ROOT; };
 		F56088A529B79B6E00DF82E9 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = BusinessCard/Screen/ContentView.swift; sourceTree = SOURCE_ROOT; };
-		F56088A629B79B6E00DF82E9 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUp.swift; path = BusinessCard/Screen/SignUp.swift; sourceTree = SOURCE_ROOT; };
+		F56088A629B79B6E00DF82E9 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUp.swift; path = BusinessCard/Screen/authScreens/SignUp.swift; sourceTree = SOURCE_ROOT; };
 		F5F9A11A29A63E69001AD719 /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
 		F5FAEDD729649B4300E64997 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
 		F5FAEDDA2965BE8F00E64997 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -140,15 +140,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F53396E129BB3FD300017FA5 /* authScreens */ = {
+			isa = PBXGroup;
+			children = (
+				F56088A329B79B6E00DF82E9 /* LoginView.swift */,
+				F56088A429B79B6E00DF82E9 /* SignUpViewModel.swift */,
+				F56088A629B79B6E00DF82E9 /* SignUp.swift */,
+			);
+			path = authScreens;
+			sourceTree = "<group>";
+		};
 		F560886E29B79ADA00DF82E9 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				F53396E129BB3FD300017FA5 /* authScreens */,
 				F56088A229B79B6E00DF82E9 /* setting.swift */,
-				F56088A629B79B6E00DF82E9 /* SignUp.swift */,
-				F56088A429B79B6E00DF82E9 /* SignUpViewModel.swift */,
 				F56088A529B79B6E00DF82E9 /* ContentView.swift */,
 				F56088A129B79B6E00DF82E9 /* HomeView.swift */,
-				F56088A329B79B6E00DF82E9 /* LoginView.swift */,
 				F560887C29B79ADA00DF82E9 /* Create */,
 				F560887029B79ADA00DF82E9 /* Card */,
 			);
